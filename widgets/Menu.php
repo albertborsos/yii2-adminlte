@@ -8,6 +8,7 @@
 namespace yiister\adminlte\widgets;
 
 use rmrevin\yii\fontawesome\component\Icon;
+use rmrevin\yii\fontawesome\FA;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 
@@ -66,7 +67,7 @@ class Menu extends \yii\widgets\Menu
                         : ''
                     ) . (
                     isset($item['items']) && count($item['items']) > 0
-                        ? new Icon('fa fa-angle-left pull-right')
+                        ? FA::icon(FA::_ANGLE_LEFT, ['class' => 'pull-right'])
                         : ''
                     ),
             ]
